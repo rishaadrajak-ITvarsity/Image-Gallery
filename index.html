@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Image Gallery Plus</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">Image Gallery Plus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">About</a>
+                    <a href="#" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--
+            data-bs-ride="true" or "carousel" for autoscroll;
+            remove -bs- on older package;
+            carousel pauses on mouse hover;
+        -->
+        <div id="carouselImg" class="carousel slide carouselImg" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselImg" data-bs-slide-to="0" class="active" aria-current="true"></li>
+                <li data-bs-target="#carouselImg" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselImg" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/house.jpg" class="d-block w-100" id="carouselImg1">
+                    <div class="carousel-caption">
+                        <h1 id="carouselCaption1" class="text-capitalize">House in the forest</h1>
+                        <p id="carouselLorem1">This is some dummy text</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/leaves.jpg" class="d-block w-100" id="carouselImg2">
+                    <div class="carousel-caption">
+                        <h1 id="carouselCaption2" class="text-capitalize">Autumn leaves</h1>
+                        <p id="carouselLorem2">This is some dummy text</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tulips.jpg" class="d-block w-100" id="carouselImg3">
+                    <div class="carousel-caption">
+                        <h1 id="carouselCaption3" class="text-capitalize">Tulips</h1>
+                        <p id="carouselLorem3">This is some dummy text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container team">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/thandi.jpg" class="img-thumbnail rounded-circle" width="160" id="teamImg1">
+                    <h2 id="teamText1">Thandi Kumalo</h2>
+                    <p>The team would fall-apart without this member</p>
+                    <p><a href="#" class="btn btn-secondary" role="button">View details</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/john.jpg" class="img-thumbnail rounded-circle" width="160" id="teamImg2">
+                    <h2 id="teamText2">John Smith</h2>
+                    <p>A special character, keeping-up enthusiasm</p>
+                    <p><a href="#" class="btn btn-secondary" role="button">View details</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/sally.jpg" class="img-thumbnail rounded-circle" width="160" id="teamImg3">
+                    <h2 id="teamText3">Sally Robins</h2>
+                    <p>The tech-expert of the band with many skills</p>
+                    <p><a href="#" class="btn btn-secondary" role="button">View details</a></p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7" id="postTextDiv1">
+                    <h2 class="feature-heading">
+                        First featurette heading. 
+                        <span class="text-muted">It'll blow your mind.</span>
+                    </h2>
+                    <p class="lead">this is more dummy text</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/asian-house.jpg" class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" id="postImg1">
+                </div>
+            </div>
+            
+            <hr class="section-divider">
+            
+            <div class="row">
+                <div class="col-md-7 order-md-2" id="postTextDiv2">
+                    <h2 class="feature-heading">
+                        Second featurette heading. 
+                        <span class="text-muted">It'll blow your mind.</span>
+                    </h2>
+                    <p class="lead">this is more dummy text</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="img/woman.jpg" class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" id="postImg2">
+                </div>
+            </div>
+            
+            <hr class="section-divider">
+            
+            <div class="row">
+                <div class="col-md-7" id="postTextDiv3">
+                    <h2 class="feature-heading">
+                        Third featurette heading. 
+                        <span class="text-muted">It'll blow your mind.</span>
+                    </h2>
+                    <p class="lead">this is more dummy text</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/boat.jpg" class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" id="postImg3">
+                </div>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <div class="container d-block w-100 text-center">
+            <button class="link-dark p-sm-4 rounded-4 fs-2 text-uppercase" id="load">
+                randomize
+            </button>
+            <p class="p-sm-5">
+                Click on the above button to load random resources.
+                <br><br>
+                It's something new each time!
+                <br><br>
+                Then click 'Back to top' to start over.
+            </p>
+        </div>
+
+        <hr class="section-divider">
+
+        <footer class="container footer-section">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>
+                &copy;
+                2019-2022 Company, Inc. 
+                &middot; 
+                <a href="#">Privacy</a> 
+                &middot; 
+                <a href="#">Terms</a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // api's
+        const carouselAPI       = 'https://unsplash.it/1200/480'
+        const carouselTextAPI1  = 'https://random-word-form.herokuapp.com/random/adjective?count=2'
+        const carouselTextAPI2  = 'https://random-word-form.herokuapp.com/random/noun'
+        const teamImgAPI        = 'https://api.minimalavatars.com/avatar/random/png'
+        const teamTextAPI       = 'https://random-data-api.com/api/name/random_name'
+        const postImgAPI        = 'https://unsplash.it/500/500'
+        const postTextAPI       = 'https://random-data-api.com/api/coffee/random_coffee'
+        const loremAPI          = 'https://random-data-api.com/api/lorem_ipsum/random_lorem_ipsum'
+
+        const btnLoad = document.querySelector('#load')                     // add event listener to button
+        btnLoad.addEventListener('click', loadResources)                    // only load new data on click
+
+        function loadResources(){
+            for(i=1;i<4;i++){
+                // loop through n number of elements;
+                // 3 elements in each section
+                getImgData(getElement('carouselImg', i), carouselAPI)
+                getImgData(getElement('teamImg', i), teamImgAPI)
+                getImgData(getElement('postImg', i), postImgAPI)
+                getTextData(getElement('carouselCaption', i), carouselTextAPI1, 3)
+                getTextData(getElement('teamText', i), teamTextAPI, 1)
+                getTextData(getElement('postTextDiv', i), postTextAPI, 2)
+                getTextData(getElement('carouselLorem', i), loremAPI, 5)
+                getTextData(getElement('carouselCaption', i), carouselTextAPI2, 4)
+            }
+        }
+
+        function getElement(section, i){
+            // select elemet by id naming convention {sectionName}{elementNumber}
+            id = section+i
+            ele = document.getElementById(id)
+            return ele
+        }
+
+        async function getImgData(img, api){
+            const response = await fetch(api)                               // wait for promise to be fulfilled
+            const blob = await response.blob()                              // convert resp to object 
+            if(!response.ok){                                               // basic error handling
+                throw new Error(`HTTP Error! Status : ${response.status}`)
+            }
+            img.src = URL.createObjectURL(blob)                             // create and assign url to image element source attr
+        }
+
+        async function getTextData(text, api, type){                        // type is used to differentiate elements
+            const response = await fetch(api)
+            const json = await response.json()
+            if(!response.ok) throw new Error(`HTTP Error! Status : ${response.status}`)
+            
+            if(type===1){
+                text.innerText = json.name
+            }else{
+                if(type===2){
+                    setPostText(text, json)
+                }else{
+                    if(type===5){
+                        text.innerText = json.very_long_sentence
+                    }else{
+                        //type 3 or 4
+                        setCarouselCaption(text, json, type)
+                    }
+                }
+            }
+        }
+
+        function setCarouselCaption(h1Element, json, type){
+            if(type===3){
+                h1Element.innerText = json[0] + " & " + json[1]
+            }else{
+                // type 4
+                h1Element.innerText = h1Element.innerText + " " + json[0]
+            }
+            // console.log(json)
+        }
+
+        function setPostText(textDiv, json){
+            // console.log(json)
+            textDiv.innerHTML = `
+                    <h2 class="feature-heading">
+                        ${json.blend_name} 
+                        <span class="text-muted">
+                            ${json.variety}
+                        </span>
+                    </h2>
+                    <p class="lead">
+                        From ${json.origin} with notes of ${json.notes}
+                    </p>
+            `
+        }
+    </script>
+</body>
+</html>
